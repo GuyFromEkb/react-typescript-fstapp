@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NavBar: React.FC = () => {
 	return (
 		<nav>
@@ -7,13 +9,14 @@ const NavBar: React.FC = () => {
 				</a>
 				<ul className="right hide-on-med-and-down">
 					<li>
-						<a href="/">Sass</a>
+					<Link to={"/"}>Список Дел</Link>
 					</li>
-					<li>
-						<a href="/">Components</a>
+					 <li>
+					 <Link to={"/drag-drop"}>Драг Дроп Карточки</Link>
 					</li>
+					
 					<li>
-						<a href="/">JavaScript</a>
+					<Link to={"/about"}>Заглушка</Link>
 					</li>
 				</ul>
 			</div>
